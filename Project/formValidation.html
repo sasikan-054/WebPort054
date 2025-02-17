@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Form Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><span class="text-pink-500">SASI</span>PORT</h1>
+
+            <ul class="hidden md:flex space-x-6 text-gray-800">
+                <li><a href="/WebPort/index.html" class="hover:underline hover:text-pink-500">HOME</a></li>
+                <li><a href="/WebPort/about.html" class="hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                <div class="relative group">
+                    <a href="/WebPort/project.html" class="hover:underline hover:text-pink-500">PROJECT</a>
+                    <ul class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden group-hover:block">
+                        <li><a href="menu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                        <li><a href="form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                        <li><a href="musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                        <li><a href="adjustMenu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                    </ul>
+                  </div>
+                <li><a href="/WebPort/contact.html" class="hover:underline hover:text-pink-500">CONTACT</a></li>
+
+            </ul>
+
+            <div class="relative">
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+            
+                <div class="flex items-center space-x-4">
+                    <label for="menu-toggle" class="cursor-pointer block">
+                        <svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </label>
+            
+                    <div class="hidden lg:flex items-center">
+                        <input type="text" placeholder="Search..." class="border rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+                </div>
+            
+                <ul class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden peer-checked:block">
+                    <li><a href="/WebPort/index.html" class="block px-4 py-2 hover:underline hover:text-pink-500">HOME</a></li>
+                    <li><a href="/WebPort/about.html" class="block px-4 py-2 hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                    <div class="relative group">
+                        <a href="/WebPort/project.html" class="block px-4 py-2 hover:underline hover:text-pink-500">PROJECT</a>
+                        <ul class="absolute left-0 mt-2 w-48 bg-gray-200 shadow-md rounded-lg hidden group-hover:block">
+                            <li><a href="menu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                            <li><a href="form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                            <li><a href="musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                            <li><a href="adjustMenu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                        </ul>
+                      </div>
+                    <li><a href="/WebPort/contact.html" class="block px-4 py-2 hover:underline hover:text-pink-500">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-3/5">
+            <h2 class="text-2xl font-bold text-center mb-4">Form Validation</h2>
+            <form id="form">
+                <div class="mb-3">
+                    <label class="block font-medium">ชื่อ:</label>
+                    <input type="text" id="name" class="w-full border p-2 rounded">
+                    <p class="text-red-500 text-sm" id="nameError"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="block font-medium">อีเมล:</label>
+                    <input type="email" id="email" class="w-full border p-2 rounded">
+                    <p class="text-red-500 text-sm" id="emailError"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="block font-medium">รหัสผ่าน:</label>
+                    <input type="password" id="password" class="w-full border p-2 rounded">
+                    <p class="text-red-500 text-sm" id="passwordError"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="block font-medium">ยืนยันรหัสผ่าน:</label>
+                    <input type="password" id="confirmPassword" class="w-full border p-2 rounded">
+                    <p class="text-red-500 text-sm" id="confirmPasswordError"></p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="w-40 bg-pink-500 text-white p-2 rounded mr-5 hover:bg-blue-600">สมัคร</button>
+                    <button type="reset" class="w-40 bg-pink-500 text-white p-2 rounded ml-5 hover:bg-blue-600">ยกเลิก</button>
+                </div>
+                
+            </form>
+        </div>
+    
+        <script>
+            document.getElementById("form").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                let name = document.getElementById("name").value.trim();
+                let email = document.getElementById("email").value.trim();
+                let password = document.getElementById("password").value;
+                let confirmPassword = document.getElementById("confirmPassword").value;
+
+                let nameError = document.getElementById("nameError");
+                let emailError = document.getElementById("emailError");
+                let passwordError = document.getElementById("passwordError");
+                let confirmPasswordError = document.getElementById("confirmPasswordError");
+
+                nameError.textContent = "";
+                emailError.textContent = "";
+                passwordError.textContent = "";
+                confirmPasswordError.textContent = "";
+
+                let isValid = true;
+
+                if (name.length < 3) {
+                    nameError.textContent = "ชื่อต้องมีอย่างน้อย 3 ตัวอักษร";
+                    isValid = false;
+                }
+
+                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    emailError.textContent = "กรุณากรอกอีเมลที่ถูกต้อง";
+                    isValid = false;
+                }
+
+                if (password.length < 6) {
+                    passwordError.textContent = "รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร";
+                    isValid = false;
+                }
+
+                if (password !== confirmPassword) {
+                    confirmPasswordError.textContent = "รหัสผ่านไม่ตรงกัน";
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    alert("สมัครสมาชิกสำเร็จ!");
+                    this.reset();
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

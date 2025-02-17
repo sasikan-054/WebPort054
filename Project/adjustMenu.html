@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Adjust Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><span class="text-pink-500">SASI</span>PORT</h1>
+
+            <ul class="hidden md:flex space-x-6 text-gray-800">
+                <li><a href="/WebPort/index.html" class="hover:underline hover:text-pink-500">HOME</a></li>
+                <li><a href="/WebPort/about.html" class="hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                <div class="relative group">
+                    <a href="/WebPort/project.html" class="hover:underline hover:text-pink-500">PROJECT</a>
+                    <ul class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden group-hover:block">
+                        <li><a href="menu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                        <li><a href="form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                        <li><a href="musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                        <li><a href="formValidation.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                    </ul>
+                  </div>
+                <li><a href="/WebPort/contact.html" class="hover:underline hover:text-pink-500">CONTACT</a></li>
+
+            </ul>
+
+            <div class="relative">
+              <input type="checkbox" id="menu-toggle" class="peer hidden">
+          
+              <div class="flex items-center space-x-4">
+                  <label for="menu-toggle" class="cursor-pointer block">
+                      <svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                      </svg>
+                  </label>
+          
+                  <div class="hidden lg:flex items-center">
+                      <input type="text" placeholder="Search..." class="border rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                  </div>
+              </div>
+          
+              <ul class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden peer-checked:block">
+                  <li><a href="/WebPort/index.html" class="block px-4 py-2 hover:underline hover:text-pink-500">HOME</a></li>
+                  <li><a href="/WebPort/about.html" class="block px-4 py-2 hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                  <div class="relative group">
+                    <a href="/WebPort/project.html" class="block px-4 py-2 hover:underline hover:text-pink-500">PROJECT</a>
+                    <ul class="absolute left-0 mt-2 w-48 bg-gray-200 shadow-md rounded-lg hidden group-hover:block">
+                        <li><a href="menu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                        <li><a href="form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                        <li><a href="musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                        <li><a href="formValidation.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                    </ul>
+                  </div>
+                  <li><a href="/WebPort/contact.html" class="block px-4 py-2 hover:underline hover:text-pink-500">CONTACT</a></li>
+              </ul>
+          </div>
+
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-6 mt-10">
+        <h1 class="text-4xl font-bold text-center text-pink-500">กุ้งทอดกระเทียมราดข้าว</h1>
+        <p class="mt-4 text-gray-700 text-center">
+            เมนูอาหารที่ทางเรามีมานำเสนอให้ทุกคนในวันนี้เป็นเมนูที่เหมาะสำหรับคนที่หลงรักในการทานกุ้ง นั่นก็คือเมนูกุ้งทอดกระเทียมเมนูโปรดของใครหลายๆคนที่อร่อยมากแต่ทำไม่ยากอย่างที่คิด แถมวัตถุดิบในการทำก็ไม่เยอะเอาล่ะค่ะไม่รอช้าเรา มาดูประโยชน์ วัตถุดิบ และวิธีการทำกันเลยดีกว่า
+        </p>
+
+        <nav class="mt-6">
+            <ul class="flex justify-center space-x-6 border-t-4 border-black border-b-2 py-2">
+                <li><a href="#ส่วนผสม" class="hover:text-pink-500">ส่วนผสม</a></li>
+                <li><a href="#วิธีทำ" class="hover:text-pink-500">วิธีทำ</a></li>
+                <li><a href="#คุณค่าทางโภชนาการ" class="hover:text-pink-500">คุณค่าทางโภชนาการ</a></li>
+            </ul>
+        </nav>
+
+        <img src="https://storage.ftiebusiness.com/c1/Product_47949_264225760_fullsize.jpg" class="w-3/6 justify-center items-center rounded-lg shadow-md mt-6" />
+
+        <h2 id="ส่วนผสม" class="text-2xl font-bold text-pink-500 mt-8">ส่วนผสม</h2>
+        <ul class="list-disc ml-6 mt-2 text-gray-700">
+            <li>กุ้ง 500 กรัม</li>
+            <li>กุ้ง 500 กรัม</li>
+            <li>ผักชี 2 ต้น</li>
+            <li>น้ำมันหอย 1 ช้อนโต๊ะ</li>
+            <li>ซอสปรุงรส 1 ช้อนโต๊ะ</li>
+            <li>ผงปรุงรส 1/2 ช้อนชา</li>
+            <li>น้ำตาลทราย 1/2 ช้อนชา</li>
+            <li>พริกไทย 1/2 ช้อนชา</li>
+        </ul>
+
+        <h2 id="วิธีทำ" class="text-2xl font-bold text-pink-500 mt-8">วิธีทำ</h2>
+        <ol class="list-decimal ml-6 mt-2 text-gray-700 space-y-2">
+            <li>นำกุ้งมาล้างให้สะอาด แกะเปลือก ผ่าหลัง ดึงเส้นดำออกให้เรียบร้อย</li>
+            <li>นำกระเทียมมาสับให้ละเอียด จากนั้นตั้งกระทะใส่น้ำมันรอให้ร้อน นำกระเทียมลงไปเจียวด้วยไฟอ่อน สำคัญนะคะว่าต้องไฟอ่อนไม่นั้นกระเทียมไหม้จะขม เจียวกระเทียมจนกระเทียมเริ่มมีกลิ่นหอมและมีสีเหลืองทองสวย จากนั้นตักขึ้นพักไว้</li>
+            <li>ใช้น้ำมันที่เหลือจากเจียวกระเทียม ตั้งไฟนำกุ้งลงไปผัด เมื่อกุ้งเริ่มสุก ให้ปรุงรสด้วยน้ำมันหอย ซอสปรุงรส ผงปรุงรส และน้ำตาลทราย ผัดให้ส่วนผสมเข้ากันดี</li>
+            <li>นำกระเทียมที่เจียวไว้ นำลงไปผัดกับกุ้งด้วย เสร็จแล้วตักใส่จาน โรยด้วยพริกไทยป่น และผักชี พร้อมเสิร์ฟได้</li>
+        </ol>
+
+        <img src="https://i.ytimg.com/vi/3LNq8nLfdec/hq720.jpg" class="w-3/6 items-center justify-center rounded-lg shadow-md mt-6" />
+
+        <h2 id="คุณค่าทางโภชนาการ" class="text-2xl font-bold text-pink-500 mt-8">คุณค่าทางโภชนาการ</h2>
+        <table class="w-full border-collapse border border-gray-300 mt-4">
+            <tr class="bg-gray-200">
+                <th class="p-2 border">สารอาหาร</th>
+                <th class="p-2 border">ปริมาณ</th>
+                <th class="p-2 border">หน่วย</th>
+                <th class="p-2 border">ร้อยละของปริมาณที่แนะนำต่อวัน</th>
+            </tr>
+
+            <tr>
+                <td class="p-2 border">ไขมันทั้งหมด</td>
+                <td class="p-2 border">16.4</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">26%</td>
+            </tr>
+
+            <tr>
+                <td class="p-2 border">ไขมันอิ่มตัว</td>
+                <td class="p-2 border">2.8</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">14%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ไขมันไม่อิ่มตัวเชิงซ้อน</td>
+                <td class="p-2 border">8.7</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">-</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ไขมันไม่อิ่มตัวเชิงเดี่ยว</td>
+                <td class="p-2 border">3.7</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">-</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ไขมันทราน</td>
+                <td class="p-2 border">0</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">-</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">คลอเรสเตอรอล</td>
+                <td class="p-2 border">257</td>
+                <td class="p-2 border">มิลลิกรัม</td>
+                <td class="p-2 border">86%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">โซเดียม</td>
+                <td class="p-2 border">423.7</td>
+                <td class="p-2 border">มิลลิกรัม</td>
+                <td class="p-2 border">18%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">โพแทสเซียม</td>
+                <td class="p-2 border">377.1</td>
+                <td class="p-2 border">มิลลิกรัม</td>
+                <td class="p-2 border">11%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">คาร์โบไฮเดรตทั้งหมด</td>
+                <td class="p-2 border">60.2</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">21%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ใยอาหาร</td>
+                <td class="p-2 border">1.5</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">6%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">น้ำตาล</td>
+                <td class="p-2 border">0.2</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">-</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">โปรตีน</td>
+                <td class="p-2 border">34.2</td>
+                <td class="p-2 border">กรัม</td>
+                <td class="p-2 border">69%</td>
+              </tr>
+      
+              <tr>
+                <td colspan="4"  class="p-2 border"></td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">วิตามินเอ</td>
+                <td class="p-2 border">9.078%</td>
+                <td class="p-2 border">วิตามินซี</td>
+                <td class="p-2 border">4.80815%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">แคลเซียม</td>
+                <td class="p-2 border">12.57609%</td>
+                <td class="p-2 border">เหล็ก</td>
+                <td class="p-2 border">16.3574%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">วิตามินดี</td>
+                <td class="p-2 border">2.04%</td>
+                <td class="p-2 border">วิตามินบี 6</td>
+                <td class="p-2 border">26.25735%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">วิตามินบี 12</td>
+                <td class="p-2 border">38.76%</td>
+                <td class="p-2 border">แมกนีเซียม</td>
+                <td class="p-2 border">18.63421%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ไทอามิน</td>
+                <td class="p-2 border">2.2236%</td>
+                <td class="p-2 border">ไรโบพลาวิน</td>
+                <td class="p-2 border">2.4072%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ไนอาซิน</td>
+                <td class="p-2 border">19.2168%</td>
+                <td class="p-2 border">วิตามินอี</td>
+                <td class="p-2 border">8.16%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">วิตามินเค</td>
+                <td class="p-2 border">2.55%</td>
+                <td class="p-2 border">ซิงค์</td>
+                <td class="p-2 border">18.0234%</td>
+              </tr>
+      
+              <tr>
+                <td class="p-2 border">ฟอสฟอรัส</td>
+                <td class="p-2 border">49.5108%</td>
+                <td colspan="2" class="p-2 border">-</td>
+              </tr>
+
+        </table>
+
+        <h3 class="text-2xl font-bold text-pink-500 mt-8">Comment</h3>
+        <form class="mt-4 space-y-4">
+            <div>
+                <label for="topic" class="block font-semibold">Topic :</label>
+                <input type="text" id="topic" class="w-full border border-gray-300 rounded-md p-2">
+            </div>
+            <div>
+                <label for="comment" class="block font-semibold">Comment :</label>
+                <textarea id="comment" rows="4" class="w-full border border-gray-300 rounded-md p-2"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition duration-300">
+                Submit
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>

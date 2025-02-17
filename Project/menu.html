@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><span class="text-pink-500">SASI</span>PORT</h1>
+
+            <ul class="hidden md:flex space-x-6 text-gray-800">
+                <li><a href="/WebPort/index.html" class="hover:underline hover:text-pink-500">HOME</a></li>
+                <li><a href="/WebPort/about.html" class="hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                <div class="relative group">
+                  <a href="/WebPort/project.html" class="hover:underline hover:text-pink-500">PROJECT</a>
+                  <ul class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden group-hover:block">
+                      <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                      <li><a href="form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                      <li><a href="musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                      <li><a href="adjustMenu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                      <li><a href="formValidation.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                  </ul>
+                </div>
+                <li><a href="/WebPort/contact.html" class="hover:underline hover:text-pink-500">CONTACT</a></li>
+
+            </ul>
+
+            <div class="relative">
+              <input type="checkbox" id="menu-toggle" class="peer hidden">
+          
+              <div class="flex items-center space-x-4">
+                  <label for="menu-toggle" class="cursor-pointer block">
+                      <svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                      </svg>
+                  </label>
+          
+                  <div class="hidden lg:flex items-center">
+                      <input type="text" placeholder="Search..." class="border rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                  </div>
+              </div>
+          
+              <ul class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden peer-checked:block">
+                  <li><a href="/WebPort/index.html" class="block px-4 py-2 hover:underline hover:text-pink-500">HOME</a></li>
+                  <li><a href="/WebPort/about.html" class="block px-4 py-2 hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                  <div class="relative group">
+                    <a href="/WebPort/project.html" class="block px-4 py-2 hover:underline hover:text-pink-500">PROJECT</a>
+                    <ul class="absolute left-0 mt-2 w-48 bg-gray-200 shadow-md rounded-lg hidden group-hover:block">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                        <li><a href="form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                        <li><a href="musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                        <li><a href="adjustMenu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                        <li><a href="formValidation.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                    </ul>
+                  </div>
+                  <li><a href="/WebPort/contact.html" class="block px-4 py-2 hover:underline hover:text-pink-500">CONTACT</a></li>
+              </ul>
+          </div>
+
+        </div>
+    </nav>
+
+    <h1 class="text-3xl font-bold mt-6">กุ้งทอดกระเทียมราดข้าว</h1>
+    <p class="mt-4 leading-relaxed">
+        เมนูอาหารที่ทางเรามีมานำเสนอให้ทุกคนในวันนี้เป็นเมนูที่เหมาะสำหรับคนที่หลงรักในการทานกุ้ง นั่นก็คือเมนูกุ้งทอดกระเทียมเมนูโปรดของใครหลายๆคนที่อร่อยมากแต่ทำไม่ยากอย่างที่คิด แถมวัตถุดิบในการทำก็ไม่เยอะเอาล่ะค่ะไม่รอช้าเรา มาดูประโยชน์ วัตถุดิบ และวิธีการทำกันเลยดีกว่า
+    </p>
+
+    <ul class="list-disc list-inside mt-4">
+        <li><a href="#ส่วนผสม" class="text-pink-500">ส่วนผสม</a></li>
+        <li><a href="#วิธีทำ" class="text-pink-500">วิธีทำ</a></li>
+        <li><a href="#คุณค่าทางโภชนาการ" class="text-pink-500">คุณค่าทางโภชนาการ</a></li>
+    </ul>
+
+    <img src="https://storage.ftiebusiness.com/c1/ProductThumb_47949_612771206_resize.jpg" class="w-full max-w-md mt-4 rounded-lg shadow-md" />
+
+    <h3 id="ส่วนผสม" class="text-2xl font-semibold mt-6">ส่วนผสม</h3>
+    <ul class="list-disc list-inside mt-2">
+        <li>กุ้ง 500 กรัม</li>
+        <li>กุ้ง 500 กรัม</li>
+        <li>ผักชี 2 ต้น</li>
+        <li>น้ำมันหอย 1 ช้อนโต๊ะ</li>
+        <li>ซอสปรุงรส 1 ช้อนโต๊ะ</li>
+        <li>ผงปรุงรส 1/2 ช้อนชา</li>
+        <li>น้ำตาลทราย 1/2 ช้อนชา</li>
+        <li>พริกไทย 1/2 ช้อนชา</li>
+    </ul>
+
+    <h3 id="วิธีทำ" class="text-2xl font-semibold mt-6">วิธีทำ</h3>
+    <ol class="list-decimal list-inside mt-2">
+        <li>
+            นำกุ้งมาล้างให้สะอาด แกะเปลือก ผ่าหลัง ดึงเส้นดำออกให้เรียบร้อย
+        </li>
+        <li>
+            นำกระเทียมมาสับให้ละเอียด จากนั้นตั้งกระทะใส่น้ำมันรอให้ร้อน นำกระเทียมลงไปเจียวด้วยไฟอ่อน สำคัญนะคะว่าต้องไฟอ่อนไม่นั้นกระเทียมไหม้จะขมเจียวกระเทียมจนกระเทียมเริ่มมีกลิ่นหอมและมีสีเหลืองทองสวย จากนั้นตักขึ้นพักไว้
+        </li>
+        <li>
+            ใช้น้ำมันที่เหลือจากเจียวกระเทียม ตั้งไฟนำกุ้งลงไปผัด เมื่อกุ้งเริ่มสุก ให้ปรุงรสด้วยน้ำมันหอย ซอสปรุงรส ผงปรุงรส และน้ำตาลทราย ผัดให้ส่วนผสมเข้ากันดี
+        </li>
+        <li>
+            นำกระเทียมที่เจียวไว้ นำลงไปผัดกับกุ้งด้วย เสร็จแล้วตักใส่จาน โรยด้วยพริกไทยป่น และผักชี พร้อมเสิร์ฟได้
+        </li>
+    </ol>
+
+    <h3 id="คุณค่าทางโภชนาการ" class="text-2xl font-semibold mt-6">คุณค่าทางโภชนาการ</h3>
+    <table>
+        <tr>
+            <td colspan="4" style="text-align: center">
+              ข้อมูลโภชนาการ กุ้งทอดกระเทียมราดข้าว
+            </td>
+          </tr>
+    
+          <tr>
+            <th>สารอาหาร</th>
+            <th>ปริมาณ</th>
+            <th>หน่วย</th>
+            <th>ร้อยละของปริมาณที่แนะนำต่อวัน</th>
+          </tr>
+          
+          <tr>
+            <td>ไขมันทั้งหมด</td>
+            <td>16.4</td>
+            <td>กรัม</td>
+            <td>26%</td>
+          </tr>
+    
+          <tr>
+            <td>ไขมันอิ่มตัว</td>
+            <td>2.8</td>
+            <td>กรัม</td>
+            <td>14%</td>
+          </tr>
+    
+          <tr>
+            <td>ไขมันไม่อิ่มตัวเชิงซ้อน</td>
+            <td>8.7</td>
+            <td>กรัม</td>
+            <td>-</td>
+          </tr>
+    
+          <tr>
+            <td>ไขมันไม่อิ่มตัวเชิงเดี่ยว</td>
+            <td>3.7</td>
+            <td>กรัม</td>
+            <td>-</td>
+          </tr>
+    
+          <tr>
+            <td>ไขมันทราน</td>
+            <td>0</td>
+            <td>กรัม</td>
+            <td>-</td>
+          </tr>
+    
+          <tr>
+            <td>คลอเรสเตอรอล</td>
+            <td>257</td>
+            <td>มิลลิกรัม</td>
+            <td>86%</td>
+          </tr>
+    
+          <tr>
+            <td>โซเดียม</td>
+            <td>423.7</td>
+            <td>มิลลิกรัม</td>
+            <td>18%</td>
+          </tr>
+    
+          <tr>
+            <td>โพแทสเซียม</td>
+            <td>377.1</td>
+            <td>มิลลิกรัม</td>
+            <td>11%</td>
+          </tr>
+    
+          <tr>
+            <td>คาร์โบไฮเดรตทั้งหมด</td>
+            <td>60.2</td>
+            <td>กรัม</td>
+            <td>21%</td>
+          </tr>
+    
+          <tr>
+            <td>ใยอาหาร</td>
+            <td>1.5</td>
+            <td>กรัม</td>
+            <td>6%</td>
+          </tr>
+    
+          <tr>
+            <td>น้ำตาล</td>
+            <td>0.2</td>
+            <td>กรัม</td>
+            <td>-</td>
+          </tr>
+    
+          <tr>
+            <td>โปรตีน</td>
+            <td>34.2</td>
+            <td>กรัม</td>
+            <td>69%</td>
+          </tr>
+    
+          <tr>
+            <td colspan="4"></td>
+          </tr>
+    
+          <tr>
+            <td>วิตามินเอ</td>
+            <td>9.078%</td>
+            <td>วิตามินซี</td>
+            <td>4.80815%</td>
+          </tr>
+    
+          <tr>
+            <td>แคลเซียม</td>
+            <td>12.57609%</td>
+            <td>เหล็ก</td>
+            <td>16.3574%</td>
+          </tr>
+    
+          <tr>
+            <td>วิตามินดี</td>
+            <td>2.04%</td>
+            <td>วิตามินบี 6</td>
+            <td>26.25735%</td>
+          </tr>
+    
+          <tr>
+            <td>วิตามินบี 12</td>
+            <td>38.76%</td>
+            <td>แมกนีเซียม</td>
+            <td>18.63421%</td>
+          </tr>
+    
+          <tr>
+            <td>ไทอามิน</td>
+            <td>2.2236%</td>
+            <td>ไรโบพลาวิน</td>
+            <td>2.4072%</td>
+          </tr>
+    
+          <tr>
+            <td>ไนอาซิน</td>
+            <td>19.2168%</td>
+            <td>วิตามินอี</td>
+            <td>8.16%</td>
+          </tr>
+    
+          <tr>
+            <td>วิตามินเค</td>
+            <td>2.55%</td>
+            <td>ซิงค์</td>
+            <td>18.0234%</td>
+          </tr>
+    
+          <tr>
+            <td>ฟอสฟอรัส</td>
+            <td>49.5108%</td>
+            <td colspan="2">-</td>
+          </tr>
+    </table>
+
+    <h3 class="text-2xl font-semibold mt-6">Comment</h3>
+    <div class="mt-4">
+        <label for="topic" class="block">Topic:</label>
+        <input type="text" name="topic" class="border border-gray-300 p-2 rounded w-full mt-1">
+    </div>
+    <div class="mt-4">
+        <label for="comment" class="block">Comment:</label>
+        <textarea name="comment" class="border border-gray-300 p-2 rounded w-full mt-1"></textarea>
+    </div>
+    <div class="mt-4">
+        <button class="bg-pink-500 text-white px-4 py-2 rounded">Submit</button>
+        <button class="bg-gray-500 text-white px-4 py-2 rounded">Clear</button>
+    </div>
+
+</body>
+</html>

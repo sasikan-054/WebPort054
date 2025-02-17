@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><span class="text-pink-500">SASI</span>PORT</h1>
+
+            <ul class="hidden md:flex space-x-6 text-gray-800">
+                <li><a href="index.html" class="hover:underline hover:text-pink-500">HOME</a></li>
+                <li><a href="#" class="hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                <div class="relative group">
+                    <a href="project.html" class="hover:underline hover:text-pink-500">PROJECT</a>
+                    <ul class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden group-hover:block">
+                        <li><a href="Project/menu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                        <li><a href="Project/form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                        <li><a href="Project/musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                        <li><a href="Project/adjustMenu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                        <li><a href="Project/formValidation.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                    </ul>
+                </div>
+                <li><a href="contact.html" class="hover:underline hover:text-pink-500">CONTACT</a></li>
+            </ul>
+
+            <div class="relative">
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+            
+                <div class="flex items-center space-x-4">
+                    <label for="menu-toggle" class="cursor-pointer block">
+                        <svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </label>
+            
+                    <div class="hidden lg:flex items-center">
+                        <input type="text" placeholder="Search..." class="border rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+                </div>
+            
+                <ul class="absolute right-0 mt-2 w-48 bg-white shadow-md rounded-lg hidden peer-checked:block">
+                    <li><a href="index.html" class="block px-4 py-2 hover:underline hover:text-pink-500">HOME</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:underline hover:text-pink-500">ABOUT ME</a></li>
+                    <div class="relative group">
+                        <a href="project.html" class="block px-4 py-2 hover:underline hover:text-pink-500">PROJECT</a>
+                        <ul class="absolute left-0 mt-2 w-48 bg-gray-200 shadow-md rounded-lg hidden group-hover:block">
+                            <li><a href="Project/menu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MENU</a></li>
+                            <li><a href="Project/form.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM</a></li>
+                            <li><a href="Project/musicShop.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">MUSIC SHOP</a></li>
+                            <li><a href="Project/adjustMenu.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">ADJUST MENU</a></li>
+                            <li><a href="Project/formValidation.html" class="block px-4 py-2 hover:bg-pink-100 text-gray-800">FORM VALIDATION</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="contact.html" class="block px-4 py-2 hover:underline hover:text-pink-500">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-pink-500 text-white py-6 text-center">
+        <h1 class="text-5xl font-bold">About Me</h1>
+        <p class="text-lg mt-2">Get to know more about me</p>
+    </header>
+
+    <div class="container mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg max-w-9xl">
+        
+        <div class="flex flex-col md:flex-row items-center gap-x-10 justify-center">
+            <img src="/images/homeport.jpg" alt="Profile Image" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-pink-300 shadow-md">
+            
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-pink-500">Sasikan Jaemmuean</h2>
+                <p class="text-lg text-gray-700 font-semibold">Information Technology</p>
+                <p class="text-gray-600 mt-4">"ฉันเป็นนักพัฒนาเว็บที่หลงใหลในการสร้างประสบการณ์การใช้งานที่ยอดเยี่ยมผ่าน UI ที่เรียบง่ายและสวยงาม"</p>
+                
+                <div class="mt-4 text-gray-700">
+                    <p><strong>📞 Phone:</strong> 090-980-0108</p>
+                    <p><strong>📧 Email:</strong> sskjm2756@gmail.com</p>
+                    <p><strong>📍 Address:</strong> 4/145 ซ.สุชน1 ถ.เลี่ยงเมือง ต.มะขามเตี้ย อ.เมืองสุราษฎร์ธานี</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">Education</h3>
+            <p class="text-lg font-semibold">📚 มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี</p>
+            <p class="text-gray-600">สาขาเทคโนโลยีสารสนเทศ | เกรดเฉลี่ย 3.77</p>
+        </div>
+
+        <div class="mt-10">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">Experience</h3>
+            <div class="space-y-4">
+                <div class="p-4 bg-gray-100 rounded-lg">
+                    <h4 class="text-lg font-semibold">📌 ระบบการลงทะเบียนกิจกรรมพัฒนาผู้เรียน</h4>
+                    <p class="text-gray-600">- ออกแบบ UX/UI ด้วย Figma</p>
+                    <p class="text-gray-600">- พัฒนาระบบด้วย AppSheet</p>
+                    <p class="text-gray-600">- อบรมการใช้งานระบบให้กับนักเรียน 107 คน</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-lg">
+                    <h4 class="text-lg font-semibold">📌 การวิเคราะห์ข้อมูลการตลาดด้วย Looker Studio</h4>
+                    <p class="text-gray-600">- วิเคราะห์ข้อมูลและแสดงผลผ่าน Visualization</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">Skills</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="font-semibold">Java</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-3/5"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Figma</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-3/5"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Excel</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-4/5"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Canva</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-4/5"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">HTML & CSS</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-5/6"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-semibold">JavaScript</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-3/4"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Tailwind CSS</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-4/5"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Figma</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-8/12"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Power BI</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-full"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold">Looker Studio</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-pink-500 h-4 rounded-full w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">Languages</h3>
+            <p class="text-lg">🇹🇭 Thai - Fluent</p>
+            <p class="text-lg">🇬🇧 English - Intermediate</p>
+        </div>
+
+        <div class="mt-10">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">Hobbies & Interests</h3>
+            <div class="flex flex-wrap gap-4">
+                <span class="px-4 py-2 bg-pink-100 text-pink-500 rounded-lg shadow-md">Coding</span>
+                <span class="px-4 py-2 bg-pink-100 text-pink-500 rounded-lg shadow-md">Photography</span>
+                <span class="px-4 py-2 bg-pink-100 text-pink-500 rounded-lg shadow-md">Reading</span>
+                <span class="px-4 py-2 bg-pink-100 text-pink-500 rounded-lg shadow-md">Traveling</span>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="/images/Resume.pdf" class="bg-pink-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-pink-600 transition duration-300">
+                Download Resume
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
